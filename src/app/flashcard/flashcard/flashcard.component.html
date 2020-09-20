@@ -1,0 +1,24 @@
+<div (click)="onFlipClick()" class="flip-card">
+  <div [@flip]="flipState" class="flip-card-inner">
+    <div class="flip-card-front">
+      <mat-card>
+        <mat-card-title>
+          {{flashcard.title}}
+        </mat-card-title>
+        <mat-card-content>
+          {{flashcard.content}}
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="flip-card-back">
+      <mat-card>
+        <mat-card-title>
+          {{flashcard.title}}
+        </mat-card-title>
+        <mat-card-content>
+          answer
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
